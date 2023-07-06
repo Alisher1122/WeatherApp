@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="AppLifeCiycle" customModuleProvider="target">
+            <connections>
+                <outlet property="containerVIew" destination="myZ-qJ-Mkh" id="hQO-wL-Nf5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-ER-wJS">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myZ-qJ-Mkh">
+                            <rect key="frame" x="0.0" y="0.0" width="430" height="1400"/>
+                            <color key="backgroundColor" red="0.27058823529411763" green="0.15294117647058825" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1400" id="wxy-dg-25Z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="myZ-qJ-Mkh" firstAttribute="leading" secondItem="kGX-ER-wJS" secondAttribute="leading" id="BX0-nT-B3q"/>
+                        <constraint firstAttribute="trailing" secondItem="myZ-qJ-Mkh" secondAttribute="trailing" id="PV6-oi-GzA"/>
+                        <constraint firstItem="myZ-qJ-Mkh" firstAttribute="top" secondItem="kGX-ER-wJS" secondAttribute="top" id="UZn-gk-Eli"/>
+                        <constraint firstAttribute="bottom" secondItem="myZ-qJ-Mkh" secondAttribute="bottom" id="j91-01-Rr9"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kGX-ER-wJS" secondAttribute="trailing" id="IMY-he-acf"/>
+                <constraint firstItem="kGX-ER-wJS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="N8r-qX-dfp"/>
+                <constraint firstAttribute="bottom" secondItem="kGX-ER-wJS" secondAttribute="bottom" id="UPN-1z-1fB"/>
+                <constraint firstItem="kGX-ER-wJS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZS6-Wb-zpH"/>
+                <constraint firstItem="myZ-qJ-Mkh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="sRJ-xA-bOt"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="1.3392857142857142"/>
+        </view>
+    </objects>
+</document>
